@@ -1,45 +1,75 @@
+@font-face {
+    font-family: v1;
+    src: url("./helvetica-neue-lt-pro-2-cufonfonts/HelveticaNeueLTProUltLtEx.otf");
+}
 *{
     margin: 0;
-    padding: 0;box-sizing: border-box;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: v1;
+}
+#main #nav{
+    margin: 20px;
 }
 
-body,html{
-    width: 100%;
-    height: 100%;
-}
-
-#bd{
-    width: 100%;
-    height: 100%;
-    background-image: url('pic.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-@font-face {
-    font-family: snow;
-    src: url("./Game of Thrones.ttf");
-}
-#para{
-    font-family: snow;
-    color: white;
-    font-size: larger;
-    font-weight: 900px;
-    text-align: center;
-    padding: 30px;
-}
-
-button{
-    padding: 10px;
-    border-radius: 40px;
-    background-color: white;
-    font-family: snow;
-    font-size: smaller;
-    margin: 10px auto;
+#main #nav a{
+    text-decoration: none;
+    color:black;
+    padding-right: 15px;
     
-
 }
 
-#btn{
-    text-align: center;padding-top: 200px;
+#main>h1{
+    margin-top: 60px;
+    font-size: 200px;
+    padding-left: 10px;
+    font-weight: 500;
+}
+
+#main #det{
+    margin: 30px;
+    width: 250px;
+    position: absolute;
+    bottom: 20%;
+}
+h4{
+    margin-top: 5%;
+}
+p{
+    margin-top: 5px;
+}
+
+#main #foot{
+    position: absolute;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    bottom:5%;
+    margin: 30px;
+}
+
+#main #foot a{
+    text-decoration: none;
+    color: black;
+}
+
+#main>img{
+    width: 170px;
+    position: absolute;
+}
+
+#first{
+    left:40%;
+    bottom: 40%;
+}
+#second{
+    left:55%;
+    bottom:35%;
+    z-index: 75;
+}
+#third{
+    left:45%;
+    bottom:25%;
 }
